@@ -1,0 +1,463 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>【MSPM0G3507】学习笔记(0)：学习开始前的资料收集 | Gridea</title>
+<link rel="shortcut icon" href="https://temry.github.io/favicon.ico?v=1764314151364">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://temry.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="【MSPM0G3507】学习笔记(0)：学习开始前的资料收集 | Gridea - Atom Feed" href="https://temry.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="目录
+前言
+一、官方文档
+	1、芯片选型指南
+	2、芯片数据手册
+	3、芯片开发指南
+	4、芯片寄存器手册
+	5、开发板原理图
+二、技术博客
+	1、CSDN
+	2、知乎
+三、开发者论坛
+	1、TI E2E
+	2、电子发烧友
+四、在线课程
+	..." />
+    <meta name="keywords" content="单片机" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://temry.github.io">
+  <img class="avatar" src="https://temry.github.io/images/avatar.png?v=1764314151364" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              【MSPM0G3507】学习笔记(0)：学习开始前的资料收集
+            </h2>
+            <div class="post-info">
+              <span>
+                2025-11-19
+              </span>
+              <span>
+                12 min read
+              </span>
+              
+                <a href="https://temry.github.io/tag/YWCxu6iv8V/" class="post-tag">
+                  # 单片机
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p><strong>目录</strong></p>
+<p><a href="#%E5%89%8D%E8%A8%80">前言</a><br>
+<a href="#%E4%B8%80%E3%80%81%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3">一、官方文档</a><br>
+<a href="#1%E3%80%81%E8%8A%AF%E7%89%87%E9%80%89%E5%9E%8B%E6%8C%87%E5%8D%97">	1、芯片选型指南</a><br>
+<a href="#2%E3%80%81%E8%8A%AF%E7%89%87%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C">	2、芯片数据手册</a><br>
+<a href="#3%E3%80%81%E8%8A%AF%E7%89%87%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97">	3、芯片开发指南</a><br>
+<a href="#4%E3%80%81%E8%8A%AF%E7%89%87%E5%AF%84%E5%AD%98%E5%99%A8%E6%89%8B%E5%86%8C">	4、芯片寄存器手册</a><br>
+<a href="#5%E3%80%81%E5%BC%80%E5%8F%91%E6%9D%BF%E5%8E%9F%E7%90%86%E5%9B%BE">	5、开发板原理图</a><br>
+<a href="#%E4%BA%8C%E3%80%81%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2">二、技术博客</a><br>
+<a href="#1%E3%80%81CSDN">	1、CSDN</a><br>
+<a href="#2%E3%80%81%E7%9F%A5%E4%B9%8E">	2、知乎</a><br>
+<a href="#%E4%B8%89%E3%80%81%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%BA%E5%9D%9B">三、开发者论坛</a><br>
+<a href="#1%E3%80%81TI-E2E">	1、TI E2E</a><br>
+<a href="#2%E3%80%81%E7%94%B5%E5%AD%90%E5%8F%91%E7%83%A7%E5%8F%8B">	2、电子发烧友</a><br>
+<a href="#%E5%9B%9B%E3%80%81%E5%9C%A8%E7%BA%BF%E8%AF%BE%E7%A8%8B">四、在线课程</a><br>
+<a href="#1%E3%80%81TI%E5%AE%98%E6%96%B9">	1、TI官方</a><br>
+<a href="#2%E3%80%81bilibili">	2、bilibili</a><br>
+<a href="#%E4%BA%94%E3%80%81%E4%BE%8B%E7%A8%8B">五、例程</a><br>
+<a href="#1%E3%80%81TI%E5%AE%98%E6%96%B9">	1、TI官方</a><br>
+<a href="#2%E3%80%81GitHub">	2、GitHub</a><br>
+<a href="#3%E3%80%81%E6%B7%98%E5%AE%9D">	3、淘宝</a><br>
+<a href="#%E6%80%BB%E7%BB%93">总结</a><br>
+<a href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99">参考资料</a></p>
+<hr>
+<h1 id="前言">前言</h1>
+<p>在学习一款新的MCU时，首先要做的不应该是配置开发环境或购买开发板，而是应先进行器件选型和资料搜集。器件选型可以让我们根据需求，从一开始就找到符合项目需求的芯片型号，防止在开发过程中因所用芯片的资源不满足项目需求而需要更换芯片，从而带来金钱和时间上的浪费；资料搜集可以让我们在开发过程中有依据可循、在遇到问题时能有一些解决问题的途径，不至于在遇到BUG时束手无策。<br>
+       芯片的资料来源可归纳为五个主要部分：官方文档、技术博客、开发者论坛以及在线课程、芯片例程。</p>
+<ul>
+<li><strong>官方文档：</strong> 由芯片制造商提供，包含详细的技术规格、应用指南和参考设计。</li>
+<li><strong>技术博客：</strong> 由行业专家或工程师撰写，分享实际项目经验、调试技巧和优化方案。</li>
+<li><strong>开发者论坛：</strong> 交流平台，用户可提问或解答技术问题，获取社区支持。</li>
+<li><strong>在线课程：</strong> 提供系统化学习路径，涵盖理论知识和实践操作，适合快速入门或深入学习。</li>
+<li><strong>芯片例程：</strong> 由芯片厂商或开发者社区提供的代码示例，展示特定功能或外设的基本用法。</li>
+</ul>
+<h1 id="一-官方文档">一、官方文档</h1>
+<p>芯片制造商通常会在官方网站提供完整的文档资源。访问芯片品牌的官网，在支持或下载页面搜索具体型号，可找到技术手册、参考设计等资料。例如Intel、NVIDIA、STMicroelectronics等厂商均设有专门的文档库。MSPM0的文档集中在其产品首页：</p>
+<p><a href="https://www.ti.com.cn/product/zh-cn/MSPM0G3507?keyMatch=mspm0G3&amp;tisearch=universal_search&amp;usecase=partmatches#tech-docs" title="MSPM0G3507 数据表、产品信息和支持 | 德州仪器 TI.com.cn">MSPM0G3507 数据表、产品信息和支持 | 德州仪器 TI.com.cn</a></p>
+<h2 id="1-芯片选型指南">1、芯片选型指南</h2>
+<p>在学习一款新的芯片时，首先应该查阅的就是选型指南，选型指南会将同一款芯片的不同型号甚至不同款的芯片放在一起进行对比，我们可以根据我们的项目需求在其中选出合适的芯片型号。对于一般的业余爱好者（如参加大学生电子设计竞赛的大学生）来说，需要关注的是引脚数量、外设数量、Flash大小等参数；而对于更加专业的开发者而言，需要关注的则更多，如工作温度范围、功耗等。功能越强大的芯片往往价格越高，所以在芯片选型时并不是单纯地追求高性能，应在性能与价格间进行权衡。</p>
+<figure data-type="image" tabindex="1"><img src="https://temry.github.io/post-images/1764312250972.png" alt="" loading="lazy"></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">MSPM0G3507产品首页上选型指南位置</th>
+</tr>
+</thead>
+</table>
+<figure data-type="image" tabindex="2"><img src="https://temry.github.io/post-images/1764312273481.png" alt="" loading="lazy"></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选型指南内容节选</th>
+</tr>
+</thead>
+</table>
+<h2 id="2-芯片数据手册">2、芯片数据手册</h2>
+<p>对于任何一款芯片而言，数据手册（Datasheet）绝对是最重要的资料之一，数据手册上包含了芯片的基本参数、引脚定义、工作条件及典型应用电路等。适合快速查阅关键信息，如电压范围、时钟频率或封装尺寸等。比如想知道MSPM0上某个外设能跑到多快的频率，就应该查询数据手册。</p>
+<figure data-type="image" tabindex="3"><img src="https://temry.github.io/post-images/1764312282596.png" alt="" loading="lazy"></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">MSPM0G3507产品首页上数据手册的位置</th>
+</tr>
+</thead>
+</table>
+<figure data-type="image" tabindex="4"><img src="https://temry.github.io/post-images/1764312290606.png" alt="" loading="lazy"></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">数据手册内容节选</th>
+</tr>
+</thead>
+</table>
+<h2 id="3-芯片开发指南">3、芯片开发指南</h2>
+<p>开发指南包含了芯片的硬件、软件开发方法说明，如果想要知道芯片使用什么工具进行代码编写，或者想知道MSPM0芯片的外围电路如何设计，这些内容都可以在芯片的开发指南上查询到。</p>
+<figure data-type="image" tabindex="5"><img src="https://temry.github.io/post-images/1764312323019.png" alt="" loading="lazy"></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">MSPM0G3507产品首页上开发指南位置</th>
+</tr>
+</thead>
+</table>
+<figure data-type="image" tabindex="6"><img src="https://temry.github.io/post-images/1764312333423.png" alt="" loading="lazy"></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">开发指南内容节选</th>
+</tr>
+</thead>
+</table>
+<h2 id="4-芯片寄存器手册">4、芯片寄存器手册</h2>
+<p>芯片寄存器手册介绍寄存器的基本功能、分类和访问权限。包括寄存器的读写属性（如只读、只写、读写）、位宽（如8位、16位、32位）以及寄存器在芯片中的总体布局等。开发过程中（如电赛）通常无需查阅寄存器手册，因为TI官方提供的Lib库已封装了底层寄存器操作。若想要深入理解MSPM0芯片的硬件工作原理，寄存器手册是重要的参考资料。通过查阅手册可掌握外设配置、时钟管理和中断控制等核心机制。</p>
+<figure data-type="image" tabindex="7"><img src="https://temry.github.io/post-images/1764312344474.png" alt="" loading="lazy"></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">MSPM0G3507产品首页上寄存器手册位置</th>
+</tr>
+</thead>
+</table>
+<figure data-type="image" tabindex="8"><img src="https://temry.github.io/post-images/1764312354142.png" alt="" loading="lazy"></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">寄存器手册内容节选</th>
+</tr>
+</thead>
+</table>
+<h2 id="5-开发板原理图">5、开发板原理图</h2>
+<p>开发板原理图不一定来自TI官方，如果购买的是TI官方的LP-MSPM0G3507开发板，就可以直接从TI官网上下载到原理图。非官方渠道（如淘宝）购买的开发板则需联系卖家客服获取原理图。对于开发者来说，开发板原理图的重要性不亚于数据手册，如果不知道板上外设与MSPM0引脚的映射关系，软件开发就无从谈起。以TI官方的LP-MSPM0G3507开发板为例，其原理图在其LP-MSPM0G3507开发板产品首页中可以查询到，链接如下：</p>
+<p><a href="https://www.ti.com.cn/tool/cn/LP-MSPM0G3507#related-design-resources" title="LP-MSPM0G3507 评估板 | 德州仪器 TI.com.cn">LP-MSPM0G3507 评估板 | 德州仪器 TI.com.cn</a></p>
+<figure data-type="image" tabindex="9"><img src="https://temry.github.io/post-images/1764312364834.png" alt="" loading="lazy"></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">LP-MSPM0G3507产品首页上开发板原理图位置</th>
+</tr>
+</thead>
+</table>
+<figure data-type="image" tabindex="10"><img src="https://temry.github.io/post-images/1764312374830.png" alt="" loading="lazy"></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">LP-MSPM0G3507原理图节选</th>
+</tr>
+</thead>
+</table>
+<h1 id="二-技术博客">二、技术博客</h1>
+<p>技术博客的内容大致可以分为三种：开发笔记、问题排查笔记和算法学习笔记。开发笔记是开发者在项目开发过程中整理的开发经验，如果正在进行的项目与其有重合部分，可以直接借鉴其经验；即使没有重合，也能了解到芯片的一些应用场景。问题排查笔记记录了开发过程中遇到的BUG及其解决方法，在遇到类似问题时可以参考这些方法快速解决。算法学习笔记则涉及实际项目中需要运行的复杂算法（如FOC算法），开发者会分享算法相关的内容，这些内容可以作为参考，帮助优化项目中的算法实现。博客网站有很多，列举以下这些：</p>
+<h2 id="1-csdn">1、CSDN</h2>
+<p>CSDN的技术社区活跃度是最大的，但是文章的质量参差不齐，存在大量重复文章，在遇到一些小问题，比如想知道某款芯片的开发环境如何部署、或者想要知道某款芯片的某个外设如何配置时，可以先来CSDN查找相关资料，网址如下：</p>
+<p><a href="https://www.csdn.net/?spm=1001.2101.3001.4476" title="CSDN_专业开发者社区_已接入DeepSeek R1-0528版本">CSDN_专业开发者社区_已接入DeepSeek R1-0528版本</a></p>
+<figure data-type="image" tabindex="11"><img src="https://temry.github.io/post-images/1764312384704.png" alt="" loading="lazy"></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">CSDN博客内容节选</th>
+</tr>
+</thead>
+</table>
+<p><a href="https://blog.csdn.net/weixin_47551434/article/details/147896571?fromshare=blogdetail&amp;sharetype=blogdetail&amp;sharerId=147896571&amp;sharerefer=PC&amp;sharesource=weixin_55835562&amp;sharefrom=from_link" title="【MSPM0学习笔记】04-UART收发（阻塞、中断和DMA方式）与自定义printf函数_mspm0串口学习-CSDN博客">【MSPM0学习笔记】04-UART收发（阻塞、中断和DMA方式）与自定义printf函数_mspm0串口学习-CSDN博客</a></p>
+<h2 id="2-知乎">2、知乎</h2>
+<p>知乎的内容覆盖面广，除技术外还包括生活、社科等多领域高质量讨论，但知乎不是一个专门的技术博客网站，所以其技术类内容往往深度不足，偏向科普或泛化讨论，想要初步了解某款算法的实现方法，以及其是否满足设计要求时可以首先查阅知乎：</p>
+<figure data-type="image" tabindex="12"><img src="https://temry.github.io/post-images/1764312401218.png" alt="" loading="lazy"></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">知乎博客内容节选</th>
+</tr>
+</thead>
+</table>
+<p><a href="https://zhuanlan.zhihu.com/p/147659820" title="【自制FOC驱动器】深入浅出讲解FOC算法与SVPWM技术 - 知乎">【自制FOC驱动器】深入浅出讲解FOC算法与SVPWM技术 - 知乎</a></p>
+<h1 id="三-开发者论坛">三、开发者论坛</h1>
+<p>开发者论坛是专为程序员、工程师和技术爱好者设计的在线社区，主要作用包括技术交流、资源共享和问题解决。遇到难以解决的BUG、或者对于芯片本身有什么疑问，都可以在开发者论坛上进行提问。但是需要注意的是，对问题的表述必须要清楚明了，这样才更快收到回复。</p>
+<h2 id="1-ti-e2e">1、TI E2E</h2>
+<p>TI官方论坛，由德州仪器（TI）工程师直接参与解答，专业性和准确性高，尤其适合解决芯片设计、参数选型等复杂技术问题。TI官方论坛分为英文论坛和中文论坛两种，中文论坛以简体或繁体中文为主，面向华语用户，讨论内容更贴近中国文化、社会热点及本地化需求。英文论坛以英语为主，用户来自全球各地，文化背景多元，讨论话题更具国际性，并且英文论坛回复往往会更快。</p>
+<p><a href="https://e2echina.ti.com/search?category=forum&amp;q=MSPM0G3507" title="中文论坛：E2E™ 设计支持">中文论坛：E2E™ 设计支持</a></p>
+<figure data-type="image" tabindex="13"><img src="https://temry.github.io/post-images/1764312412127.png" alt="" loading="lazy"></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">TI E2E中文论坛搜索“MSPM0”结果</th>
+</tr>
+</thead>
+</table>
+<p><a href="https://e2e.ti.com/search?category=forum&amp;q=MSPM0G3507&amp;date=past_week&amp;customdaterange=0&amp;startdate=&amp;enddate=" title="英文论坛：E2E™ 设计支持">英文论坛：E2E™ 设计支持</a></p>
+<figure data-type="image" tabindex="14"><img src="https://temry.github.io/post-images/1764312425909.png" alt="" loading="lazy"></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">TI E2E英文论坛搜索“MSPM0”结果</th>
+</tr>
+</thead>
+</table>
+<h2 id="2-电子发烧友">2、电子发烧友</h2>
+<p>电子发烧友论坛是国内一个专注于电子工程技术、硬件开发及行业资讯的综合性技术社区。该论坛覆盖电子设计、嵌入式系统、物联网、人工智能等多个领域。比起TI官方的论坛，电子发烧友论坛更适合用于寻找替代方案、学习通用电子知识、参与开源项目交流，或快速获得经验性反馈。</p>
+<p><a href="https://s.elecfans.com/s?keyword=MSPM0&amp;type=1" title="MSPM0-电子发烧友站内搜索">MSPM0-电子发烧友站内搜索</a></p>
+<figure data-type="image" tabindex="15"><img src="https://temry.github.io/post-images/1764312435035.png" alt="" loading="lazy"></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">电子发烧友论坛搜索“MSPM0”结果</th>
+</tr>
+</thead>
+</table>
+<h1 id="四-在线课程">四、在线课程</h1>
+<p>在线课程通常按照学习路径设计，从基础到进阶逐步展开，适合零基础或希望系统学习的人。</p>
+<h2 id="1-ti官方">1、TI官方</h2>
+<p>TI官方提供了一些在线视频供开发者观看。</p>
+<p><a href="https://www.ti.com.cn/sitesearch/zh-cn/docs/universalsearch.tsp?langPref=zh-cn&amp;searchTerm=Arm%20Cortex-M0+%20MCU&amp;preFilter=videos_%E8%A7%86%E9%A2%91,%E8%A7%86%E9%A2%91%E7%B3%BB%E5%88%97&amp;nr=6245#f-videos=%E8%A7%86%E9%A2%91,%E8%A7%86%E9%A2%91%E7%B3%BB%E5%88%97" title="MSPM0搜索结果 | TI.com">MSPM0搜索结果 | TI.com</a></p>
+<figure data-type="image" tabindex="16"><img src="https://temry.github.io/post-images/1764312453707.png" alt="" loading="lazy"></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">TI官方搜索“MSPM0”视频结果</th>
+</tr>
+</thead>
+</table>
+<h2 id="2-bilibili">2、bilibili</h2>
+<p>bilibili上有大量MSPM0入门教程，适合零基础用户快速了解开发环境搭建、基础外设驱动编写等。</p>
+<p><a href="https://search.bilibili.com/all?keyword=MSPM0&amp;from_source=webtop_search&amp;spm_id_from=333.1007&amp;search_source=5" title="MSPM0搜索结果 | bilibili.com">MSPM0搜索结果 | bilibili.com</a></p>
+<figure data-type="image" tabindex="17"><img src="https://temry.github.io/post-images/1764312462044.png" alt="" loading="lazy"></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">bilibili搜索“MSPM0”结果</th>
+</tr>
+</thead>
+</table>
+<h1 id="五-例程">五、例程</h1>
+<p>例程在单片机开发中扮演着关键角色，能够显著提升开发效率和代码质量。通过参考已验证的功能模块，开发者可以快速实现基础功能，减少重复劳动。例程通常包含常见功能的实现代码，如GPIO控制、定时器配置、串口通信等。开发者可以直接调用或稍作修改，避免从零开始编写代码。这种方式显著缩短了开发周期，尤其适合项目时间紧张的情况。</p>
+<h2 id="1-ti官方-2">1、TI官方</h2>
+<p>TI官方提供的MSPM0G3507芯片例程被包含在一个叫MSPM0-SDK的软件中，我们可以在官网上下载到MSPM0-SDK软件，将其安装后可以在其安装目录文件中找到相应的例程。</p>
+<p><a href="https://www.ti.com.cn/tool/cn/MSPM0-SDK?keyMatch=mspm0g3507%20sdk&amp;tisearch=universal_search#downloads" title="MSPM0-SDK 软件开发套件 (SDK) | 德州仪器 TI.com.cn">MSPM0-SDK 软件开发套件 (SDK) | 德州仪器 TI.com.cn</a></p>
+<figure data-type="image" tabindex="18"><img src="https://temry.github.io/post-images/1764312471127.png" alt="" loading="lazy"></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">MSPM0_SDK中MSPM0G3507芯片的例程目录</th>
+</tr>
+</thead>
+</table>
+<h2 id="2-github">2、GitHub</h2>
+<p>GitHub 是全球最大的代码仓库，是全球开发者广泛使用的平台。里面可以找到各种开源项目的源代码。</p>
+<p><a href="https://github.com/search?q=MSPM0&amp;type=repositories" title="MSPM0搜索结果 | github.com">MSPM0搜索结果 | github.com</a></p>
+<figure data-type="image" tabindex="19"><img src="https://temry.github.io/post-images/1764312479961.png" alt="" loading="lazy"></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">GitHub上搜索MSPM0的结果</th>
+</tr>
+</thead>
+</table>
+<h2 id="3-淘宝">3、淘宝</h2>
+<p>如果在淘宝上购买了开发板，在商品详情页上一般就可以看到开发板的资料，资料里一般会包含相应的例程，如果在商品详情页上没有找到开发板的资料，说明资料不公开，可以联系客服获取。</p>
+<p><a href="https://item.taobao.com/item.htm?id=946196615571&amp;skuId=5855714673149&amp;spm=tbpc.boughtlist.suborder_itemtitle.1.312b2e8d0WHeee" title="WeAct MSPM0G3507SRHBR MSPM0G3507 核心板 开发板 带USB转串口">WeAct MSPM0G3507SRHBR MSPM0G3507 核心板 开发板 带USB转串口</a></p>
+<figure data-type="image" tabindex="20"><img src="https://temry.github.io/post-images/1764312488276.png" alt="" loading="lazy"></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">淘宝某MSPM0开发板的主页</th>
+</tr>
+</thead>
+</table>
+<h1 id="总结">总结</h1>
+<p>在学习MSPM0芯片时，首先应进行器件选型和资料搜集，以确保选择的芯片符合项目需求并为开发提供支持。资料来源主要包括官方文档、技术博客、开发者论坛、在线课程和芯片例程。官方文档提供详尽的技术规格和应用指南，技术博客分享实际项目经验和优化方案，开发者论坛提供技术交流和问题解答，在线课程系统化地介绍理论知识和实践操作，而芯片例程则提供代码示例以展示特定功能的基本用法。这些资源对于快速入门、深入学习和解决开发过程中遇到的问题至关重要。</p>
+<p>如有错误或补充建议，欢迎私信或评论区留言交流。文中部分章节因个人能力有限，资料来源可能不够全面，欢迎提供更多资料共同学习。若内容涉及侵权，请私信联系以便及时处理。</p>
+<h1 id="参考资料">参考资料</h1>
+<p>无</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E5%89%8D%E8%A8%80">前言</a></li>
+<li><a href="#%E4%B8%80-%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3">一、官方文档</a>
+<ul>
+<li><a href="#1-%E8%8A%AF%E7%89%87%E9%80%89%E5%9E%8B%E6%8C%87%E5%8D%97">1、芯片选型指南</a></li>
+<li><a href="#2-%E8%8A%AF%E7%89%87%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C">2、芯片数据手册</a></li>
+<li><a href="#3-%E8%8A%AF%E7%89%87%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97">3、芯片开发指南</a></li>
+<li><a href="#4-%E8%8A%AF%E7%89%87%E5%AF%84%E5%AD%98%E5%99%A8%E6%89%8B%E5%86%8C">4、芯片寄存器手册</a></li>
+<li><a href="#5-%E5%BC%80%E5%8F%91%E6%9D%BF%E5%8E%9F%E7%90%86%E5%9B%BE">5、开发板原理图</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BA%8C-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2">二、技术博客</a>
+<ul>
+<li><a href="#1-csdn">1、CSDN</a></li>
+<li><a href="#2-%E7%9F%A5%E4%B9%8E">2、知乎</a></li>
+</ul>
+</li>
+<li><a href="#%E4%B8%89-%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%BA%E5%9D%9B">三、开发者论坛</a>
+<ul>
+<li><a href="#1-ti-e2e">1、TI E2E</a></li>
+<li><a href="#2-%E7%94%B5%E5%AD%90%E5%8F%91%E7%83%A7%E5%8F%8B">2、电子发烧友</a></li>
+</ul>
+</li>
+<li><a href="#%E5%9B%9B-%E5%9C%A8%E7%BA%BF%E8%AF%BE%E7%A8%8B">四、在线课程</a>
+<ul>
+<li><a href="#1-ti%E5%AE%98%E6%96%B9">1、TI官方</a></li>
+<li><a href="#2-bilibili">2、bilibili</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BA%94-%E4%BE%8B%E7%A8%8B">五、例程</a>
+<ul>
+<li><a href="#1-ti%E5%AE%98%E6%96%B9-2">1、TI官方</a></li>
+<li><a href="#2-github">2、GitHub</a></li>
+<li><a href="#3-%E6%B7%98%E5%AE%9D">3、淘宝</a></li>
+</ul>
+</li>
+<li><a href="#%E6%80%BB%E7%BB%93">总结</a></li>
+<li><a href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99">参考资料</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://temry.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
